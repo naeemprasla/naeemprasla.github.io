@@ -13,9 +13,15 @@ fetch('data/profile.json')
     const cta = document.getElementById("social-cta");
     profile.socials.forEach(social => {
       const a = document.createElement("a");
-      a.href = social.url;
+
+      if (social.platform.toLowerCase() === "email") {
+        a.href = `mailto:${social.url}`;
+      } else {
+        a.href = social.url;
+        a.target = "_blank";
+      }
+
       a.textContent = social.platform;
-      a.target = "_blank";
       a.classList.add("social-btn");
       cta.appendChild(a);
     });
