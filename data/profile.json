@@ -1,0 +1,23 @@
+{
+  "name": "Naeem",
+  "designation": "Senior Web Developer",
+  "bio": "I specialize in creating user-friendly, SEO-optimized websites and web apps using modern web technologies. Passionate about turning ideas into clean, scalable solutions.",
+  "socials": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/naeem-dev"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/in/naeem-dev"
+    },
+    {
+      "platform": "Twitter",
+      "url": "https://twitter.com/naeem-dev"
+    },
+    {
+      "platform": "Portfolio",
+      "url": "https://naeem-dev.github.io"
+    }
+  ]
+}
