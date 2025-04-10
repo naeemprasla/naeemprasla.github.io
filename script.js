@@ -62,15 +62,32 @@ fetch('data/platforms.json')
   });
 
 
-  // Load GitHub repos
+// Fetch GitHub repos
 fetch(`https://api.github.com/users/${githubUsername}/repos`)
-.then(res => res.json())
-.then(data => {
-  const repoList = document.getElementById("repo-list");
-  data.filter(repo => !repo.private && repo.name !== "naeemprasla.github.io")
-    .forEach(repo => {
+  .then(res => res.json())
+  .then(data => {
+    const repoList = document.getElementById("repo-list");
+
+    const filteredRepos = data.filter(
+      repo => !repo.private && repo.name !== "naeemprasla.github.io"
+    );
+
+    if (filteredRepos.length === 0) {
       const li = document.createElement("li");
-      li.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
+      li.textContent = "No public repositories found.";
       repoList.appendChild(li);
-    });
-});
+    } else {
+      filteredRepos.forEach(repo => {
+        const li = document.createElement("li");
+        li.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
+        repoList.appendChild(li);
+      });
+    }
+  })
+  .catch(error => {
+    console.error("Error fetching repositories:", error);
+    const repoList = document.getElementById("repo-list");
+    const li = document.createElement("li");
+    li.textContent = "Failed to load repositories.";
+    repoList.appendChild(li);
+  });
