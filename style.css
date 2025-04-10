@@ -5,11 +5,13 @@ body {
   color: #333;
 }
 
-header {
-  background-color: #222;
-  color: white;
-  padding: 20px;
-  text-align: center;
+h1#profile-name {
+  font-size: 60px;
+  margin: 0;
+}
+
+h3#profile-title {
+  margin: 0;
 }
 
 .container {
@@ -65,9 +67,12 @@ ul#repo-list li a {
   text-align: center;
   color: #000;
   font-size: 14px;
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
-
+ul#repo-list li a:hover{
+  background-color: #444;
+  color: #fff;
+}
 ul#repo-list {
   padding: 0;
   display: flex;
