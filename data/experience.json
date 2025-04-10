@@ -1,14 +1,26 @@
 [
   {
     "company": "Fleekbiz",
-    "position": "Senior Web Developer",
-    "duration": "2023 - Present",
-    "description": "Leading full-stack development projects, focusing on WordPress and web apps."
+    "position": "Senior Web Developer | Head of Unit",
+    "duration": "2019 - Present",
+    "description": "As a Senior Web Developer at Fleekbiz, I specialize in creating robust and user-friendly websites and web applications. My expertise spans both frontend and backend development, where I bring client visions to life with seamless integrations and customized solutions."
+  },
+  {
+    "company": "Nordic Blochain Solutions",
+    "position": "Exert Technical Analyst",
+    "duration": "Jan 2024 - Apr 2024",
+    "description": "As a Technical Analysis Expert at Nordic Blockchain Solution, I specialize in analyzing market trends and blockchain technologies to provide actionable insights. My role involves leveraging advanced data analytics and technical indicators to guide strategic decision-making and optimize investment strategies within the blockchain ecosystem."
   },
   {
     "company": "Bits & Digits",
-    "position": "WordPress Developer",
-    "duration": "2022 - Present",
-    "description": "Developing and maintaining custom WordPress solutions."
+    "position": "Web Developer",
+    "duration": "May 2019 - Oct 2020",
+    "description": "I specialize in web development, delivering tailored solutions that meet client needs. With strong skills in both frontend and backend development, I focus on creating responsive, SEO-friendly websites and crafting custom email templates and signatures that stand out."
+  },
+  {
+    "company": "Creomind Designs",
+    "position": "Web Developer",
+    "duration": "Jun 2016 - May 2019",
+    "description": "I specialize in turning complex challenges into elegant solutions, with a focus on web development. My passion lies in blending creativity with technical expertise to build dynamic websites that are not only functional but also truly engaging."
   }
 ]
