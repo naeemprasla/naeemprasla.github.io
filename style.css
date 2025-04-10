@@ -54,3 +54,22 @@ h1, h2 {
 #repo-list a:hover {
   text-decoration: underline;
 }
+
+
+ul#repo-list li {
+  list-style: none;
+  padding: 0;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  width: 29%;
+}
+
+ul#repo-list {
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
