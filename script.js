@@ -20,7 +20,7 @@ fetch('data/profile.json')
   .then(profile => {
     document.getElementById("profile-name").textContent = profile.name;
     document.getElementById("profile-title").textContent = profile.designation;
-    document.getElementById("profile-bio").textContent = profile.bio;
+    document.getElementById("profile-bio").innerHTML = profile.bio;
 
     const cta = document.getElementById("social-cta");
     profile.socials.forEach(social => {
