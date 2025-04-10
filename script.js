@@ -1,4 +1,4 @@
-const githubUsername = "naeem-dev"; // Change to your GitHub username
+const githubUsername = "naeemprasla"; // Change to your GitHub username
 
 // Load GitHub repos
 fetch(`https://api.github.com/users/${githubUsername}/repos`)
