@@ -1,9 +1,7 @@
 {
   "name": "Naeem Prasla",
   "designation": "Senior Web Developer | Expert in Scalable & High-Performance Web Solutions | Head of Unit | Front-End & Back-End Engineer | Trader and Analyst",
-  "bio": "Pushing the boundaries of web development with innovative solutions, I specialize in crafting dynamic, user-friendly websites with seamless front-end and back-end integration. Leveraging modern frameworks and technologies, I create responsive, high-performance, and SEO-optimized digital experiences that stand out in today's competitive online space.
-
-In addition, I bring a strategic approach to cryptocurrency trading, backed by actionable market insights and data-driven investment strategies. This dual expertise underscores my commitment to leveraging technology for impactful results in a fast-evolving digital world.",
+"bio": "Pushing the boundaries of web development with innovative solutions, I specialize in crafting dynamic, user-friendly websites with seamless front-end and back-end integration. Leveraging modern frameworks and technologies, I create responsive, high-performance, and SEO-optimized digital experiences that stand out in today's competitive online space. <br /> In addition, I bring a strategic approach to cryptocurrency trading, backed by actionable market insights and data-driven investment strategies. This dual expertise underscores my commitment to leveraging technology for impactful results in a fast-evolving digital world",
   "socials": [
     {
       "platform": "GitHub",
