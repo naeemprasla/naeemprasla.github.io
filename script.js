@@ -1,18 +1,6 @@
 const githubUsername = "naeemprasla"; // Change to your GitHub username
 
-// Load GitHub repos
-fetch(`https://api.github.com/users/${githubUsername}/repos`)
-  .then(res => res.json())
-  .then(data => {
-    const repoList = document.getElementById("repo-list");
-    data
-      .filter(repo => !repo.private && repo.name !== "naeemprasla.github.io")
-      .forEach(repo => {
-        const li = document.createElement("li");
-        li.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
-        repoList.appendChild(li);
-      });
-  });
+
 
 // Load profile info
 fetch('data/profile.json')
@@ -72,3 +60,17 @@ fetch('data/platforms.json')
       container.appendChild(span);
     });
   });
+
+
+  // Load GitHub repos
+fetch(`https://api.github.com/users/${githubUsername}/repos`)
+.then(res => res.json())
+.then(data => {
+  const repoList = document.getElementById("repo-list");
+  data.filter(repo => !repo.private && repo.name !== "naeemprasla.github.io")
+    .forEach(repo => {
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
+      repoList.appendChild(li);
+    });
+});
