@@ -56,13 +56,16 @@ h1, h2 {
 }
 
 
-ul#repo-list li {
-  list-style: none;
+ul#repo-list li a {
   padding: 0;
   background-color: #ddd;
   padding: 10px;
   border-radius: 10px;
-  width: 29%;
+  display: block;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  text-transform: capitalize;
 }
 
 ul#repo-list {
@@ -72,4 +75,9 @@ ul#repo-list {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
+}
+
+ul#repo-list li {
+  list-style: none;
+  width: 29%;
 }
