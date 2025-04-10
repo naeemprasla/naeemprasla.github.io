@@ -78,11 +78,27 @@ ul#repo-list {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: stretch;
 }
 
 ul#repo-list li {
   list-style: none;
   width: 29%;
+}
+
+div#experience-list > div {
+  background-color: #ddd;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+div#experience-list > div > h3 {
+  margin-top: 0;
+}
+
+div#experience-list > div > p {
+  margin: 0 !important;
+  margin-bottom: 5px !important;
 }
