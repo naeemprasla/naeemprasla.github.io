@@ -7,7 +7,7 @@ fetch(`https://api.github.com/users/${githubUsername}/repos`)
     const repoList = document.getElementById("repo-list");
     data.forEach(repo => {
       const li = document.createElement("li");
-      li.innerHTML = `<a href="\${repo.html_url}" target="_blank">${repo.name}</a>`;
+      li.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
       repoList.appendChild(li);
     });
   });
@@ -39,9 +39,9 @@ fetch('data/experience.json')
     data.forEach(exp => {
       const div = document.createElement("div");
       div.innerHTML = `
-        <h3>\${exp.position} at \${exp.company}</h3>
-        <p><em>\${exp.duration}</em></p>
-        <p>\${exp.description}</p>
+        <h3>${exp.position} at ${exp.company}</h3>
+        <p><em>${exp.duration}</em></p>
+        <p>${exp.description}</p>
       `;
       container.appendChild(div);
     });
