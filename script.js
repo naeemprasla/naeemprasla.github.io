@@ -7,7 +7,7 @@ fetch(`https://api.github.com/users/${githubUsername}/repos`)
     const repoList = document.getElementById("repo-list");
     data.forEach(repo => {
       const li = document.createElement("li");
-      li.innerHTML = `<a href="\${repo.html_url}" target="_blank">\${repo.name}</a>`;
+      li.innerHTML = `<a href="\${repo.html_url}" target="_blank">${repo.name}</a>`;
       repoList.appendChild(li);
     });
   });
